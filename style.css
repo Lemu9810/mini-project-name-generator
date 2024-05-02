@@ -1,10 +1,9 @@
 @import "reset.css";
 
 :root {
-  --l-size: 2em;
-  --m-size: 1.5em;
-  --s-size: 1em;
-  --xs-size: 0.5em;
+  --l-size: 2rem;
+  --m-size: 1.5rem;
+  --s-size: 1rem;
 }
 
 body {
@@ -13,6 +12,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: var(--s-size);
 }
 
 .generator-box {
@@ -20,7 +20,7 @@ body {
   padding: 25px;
   border-radius: 15px;
   text-align: center;
-  width: 50%;
+  min-width: 70%;
 }
 
 .generator-box__header h3 {
@@ -28,11 +28,6 @@ body {
   font-weight: 600;
   margin-bottom: 10px;
 }
-
-.generator-box__header span {
-  font-size: var(--s-size);
-}
-
 .generator-box__header {
   margin-bottom: 20px;
 }
@@ -44,9 +39,8 @@ body {
 
 #input-number {
   border: 1px solid rgba(0, 0, 0, 0.2);
-  padding: 5px 15px;
+  padding: 10px 15px;
   border-radius: 15px;
-  font-size: var(--s-size);
   width: 100%;
 }
 
@@ -58,31 +52,29 @@ body {
 #submit {
   position: absolute;
   right: 0px;
-  font-size: var(--s-size);
   border: none;
   background-color: rgb(68, 68, 255);
   color: white;
-  border-radius: 15px;
-  padding: 6px;
+  border-radius: 20px;
+  padding: 11px 20px;
 }
 
 .generator-box__print {
   background-color: rgb(211, 230, 255);
   border-radius: 10px;
   margin-top: 10px;
-  overflow: hidden;
   display: flex;
   flex-wrap: wrap;
 }
 
 .generator-box__print span {
   display: block;
-  margin-bottom: 10px;
-  font-size: var(--s-size);
-  width: 50%;
+  margin: 15px 0;
+  width: 30%;
 }
 
 .generator-box__print span:first-child,
-.generator-box__print span:nth-child(2) {
-  margin-top: 15px;
+.generator-box__print span:nth-child(2),
+.generator-box__print span:nth-child(3) {
+  margin-top: 20px;
 }
